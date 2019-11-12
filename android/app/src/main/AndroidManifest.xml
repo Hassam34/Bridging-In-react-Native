@@ -3,6 +3,8 @@
     package="com.bridgingdemo">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera.ar " android:required="true"/>
 
     <application
         android:name=".MainApplication"
@@ -11,7 +13,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/AppTheme">
-        <activity android:name=".UseArActivity"></activity>
+
+        <meta-data android:name="com.google.ar.core" android:value="required"/>
+        <activity android:name=".UseArActivity">
+
+
+        </activity>
         <activity
             android:name=".MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
