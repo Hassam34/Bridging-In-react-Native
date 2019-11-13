@@ -194,7 +194,6 @@
 				CE6A74B4C9FBF790F6656079 /* Pods-BridgingDemoTests.debug.xcconfig */,
 				C9CF79BB38990BB53F037069 /* Pods-BridgingDemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
